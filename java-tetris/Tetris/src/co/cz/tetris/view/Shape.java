@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Shape {
 
-	enum Tetrominoes {
+	public enum Tetrominoes {
 		NoShape, ZShape, SShape, LineShape, TShape, SquareShape, LShape, MirroredLShape
 	};
 
@@ -17,7 +17,7 @@ public class Shape {
 		setShape(Tetrominoes.NoShape);
 	}
 
-	private void setShape(Tetrominoes shape) {
+	public void setShape(Tetrominoes shape) {
 
 		// Template for all types of piece
 		coordsTable = new int[][][] {
